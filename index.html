@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOGUE STUDIO | Luxury Apparel & Couture</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. TOP ANNOUNCEMENT TICKER -->
+  <div class="top-ticker">
+    <div class="ticker-content">
+      <span>✨ FESTIVE LUXURY '26 COLLECTION IS NOW LIVE &nbsp; | &nbsp; FREE EXPRESS SHIPPING ACROSS PAKISTAN ON ORDERS OVER PKR 10,000 &nbsp; | &nbsp; USE CODE <strong>VOGUE10</strong> FOR 10% OFF</span>
+    </div>
+  </div>
+
+  <!-- 2. NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <button class="nav-toggle" id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a href="#" class="brand-logo">
+        <span class="logo-title">VOGUE STUDIO</span>
+        <span class="logo-sub">HAUTE COUTURE</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#products" class="nav-link">New Arrivals</a>
+        <a href="#craftsmanship" class="nav-link">Craftsmanship</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-action" id="search-btn" title="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="icon-action" id="wishlist-btn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-dot" id="wishlist-count">2</span>
+        </button>
+        <button class="icon-action cart-btn" id="cart-drawer-btn" title="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. SEARCH OVERLAY -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-modal-content">
+      <div class="search-header">
+        <input type="text" id="site-search-input" placeholder="Search lawn suits, velvet kurti, mens kurta..." onkeyup="landingApp.searchProducts()">
+        <button class="close-search" id="close-search">&times;</button>
+      </div>
+      <div class="search-results" id="search-results-container">
+        <p class="text-muted text-center py-md">Type to search luxury articles...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper">
+      <div class="hero-overlay"></div>
+      <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=1600&auto=format&fit=crop" class="hero-bg-img" alt="Vogue Luxury Fashion">
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-tag">THE FESTIVE LUXURY '26 EDITION</span>
+      <h1 class="hero-title">Timeless Elegance & Hand-Crafted Couture</h1>
+      <p class="hero-desc">Discover our opulent collection of pure lawn, hand-embroidered velvet, zari organza, and bespoke tailored menswear.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-gold">EXPLORE NEW ARRIVALS &rarr;</a>
+        <a href="#collections" class="btn btn-outline">VIEW LOOKBOOK</a>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <i class="fa-solid fa-gem text-gold"></i>
+          <span>100% Pure Swiss Fabrics</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-scissors text-rose"></i>
+          <span>Master Tailored Stitching</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-truck-fast text-info"></i>
+          <span>Cash On Delivery Nationwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED COLLECTIONS TILE GRID -->
+  <section class="collections-section section-padding" id="collections">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">CURATED SELECTION</span>
+        <h2 class="section-title">Explore Iconic Collections</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="collections-grid">
+        <div class="collection-card col-large" onclick="landingApp.filterByCategory('Pret 3-Piece')">
+          <img src="https://images.unsplash.com/photo-1583391733975-d28f898398e0?w=800&auto=format&fit=crop" alt="Festive Pret 3-Pc">
+          <div class="card-overlay">
+            <span class="col-tag">LIMITED EDITION</span>
+            <h3>Royal Festive Pret 3-Piece</h3>
+            <p>Opulent zari embroidery on pure chiffon & raw silk.</p>
+            <span class="shop-link">SHOP PRET &rarr;</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="landingApp.filterByCategory('Unstitched Lawn')">
+          <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&auto=format&fit=crop" alt="Unstitched Lawn">
+          <div class="card-overlay">
+            <span class="col-tag">SUMMER 2026</span>
+            <h3>Unstitched Swiss Lawn</h3>
+            <p>Digital floral prints with silk dupattas.</p>
+            <span class="shop-link">EXPLORE LAWN &rarr;</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="landingApp.filterByCategory('Embroidered Kurti')">
+          <img src="https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?w=600&auto=format&fit=crop" alt="Embroidered Kurti">
+          <div class="card-overlay">
+            <span class="col-tag">BESTSELLER</span>
+            <h3>Mirror Work Kurtis</h3>
+            <p>Chic everyday couture tops.</p>
+            <span class="shop-link">SHOP KURTIS &rarr;</span>
+          </div>
+        </div>
+
+        <div class="collection-card col-wide" onclick="landingApp.filterByCategory('Mens Wear')">
+          <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=1000&auto=format&fit=crop" alt="Groom & Formal Menswear">
+          <div class="card-overlay">
+            <span class="col-tag">BESPOKE</span>
+            <h3>Groom & Formal Menswear</h3>
+            <p>Raw silk kurtas, waistcoats, and festive sherwanis.</p>
+            <span class="shop-link">EXPLORE MENSWEAR &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. NEW ARRIVALS PRODUCTS GRID -->
+  <section class="products-section section-padding bg-darker" id="products">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">NEW IN STORE</span>
+        <h2 class="section-title">New Arrivals Collection</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="product-tabs mb-lg text-center">
+        <button class="tab-btn active" onclick="landingApp.filterProducts('ALL', this)">All Catalog</button>
+        <button class="tab-btn" onclick="landingApp.filterProducts('Pret 3-Piece', this)">Pret 3-Piece</button>
+        <button class="tab-btn" onclick="landingApp.filterProducts('Unstitched Lawn', this)">Unstitched Lawn</button>
+        <button class="tab-btn" onclick="landingApp.filterProducts('Embroidered Kurti', this)">Embroidered Kurti</button>
+        <button class="tab-btn" onclick="landingApp.filterProducts('Mens Wear', this)">Menswear</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CRAFTSMANSHIP & STORY SECTION -->
+  <section class="story-section section-padding" id="craftsmanship">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=800&auto=format&fit=crop" alt="Master Craftsmen Embroidery" class="story-img">
+          <div class="experience-badge">
+            <span class="years">25+</span>
+            <span class="exp-text">Years of Heritage Craftsmanship</span>
+          </div>
+        </div>
+
+        <div class="story-content">
+          <span class="sub-heading">HERITAGE & ARTISANSHIP</span>
+          <h2 class="section-title">The Art of Fine Pakistani Embroidery</h2>
+          <p class="story-p">Each piece at Vogue Studio represents hours of intricate hand needlework by master artisans across Multan, Faisalabad, and Lahore. We blend centuries-old Zardozi and Tilla embroidery with modern high-fashion silhouettes.</p>
+
+          <div class="features-list">
+            <div class="feature-box">
+              <i class="fa-solid fa-feather-pointed text-gold"></i>
+              <div>
+                <h4>Pure Breathable Fabrics</h4>
+                <p>100% pure Swiss lawn, Bamber chiffon, and raw silk weave.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <i class="fa-solid fa-award text-rose"></i>
+              <div>
+                <h4>Uncompromising Quality Control</h4>
+                <p>Triple inspection for stitching precision, colorfastness, and embellishment durability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. REVIEWS & TESTIMONIALS CAROUSEL -->
+  <section class="reviews-section section-padding bg-darker" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading">CLIENT LOVE</span>
+        <h2 class="section-title">What Our Royalty Say</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"Ordered the Royal Velvet 3-Piece for my sister's wedding in Karachi. The fabric quality and embroidery work exceed top designer brands. Received so many compliments!"</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">SA</div>
+            <div>
+              <span class="reviewer-name">Dr. Sadia Ahmed</span>
+              <span class="reviewer-city">Karachi • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"Super fast 2-day delivery to Lahore! The unstitched lawn prints are vibrant and the included silk dupatta feels like pure luxury. Will definitely buy again."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">MK</div>
+            <div>
+              <span class="reviewer-name">Marium Khan</span>
+              <span class="reviewer-city">Lahore • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"The mens raw silk kurta set fitting was spot on! Quality fabric that didn't shrink or fade after washing. Excellent customer support via WhatsApp."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">HR</div>
+            <div>
+              <span class="reviewer-name">Hassan Raza</span>
+              <span class="reviewer-city">Islamabad • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. SHOPPING BAG SLIDE-OVER DRAWER -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="drawer-header">
+        <h3><i class="fa-solid fa-bag-shopping text-gold"></i> YOUR SHOPPING BAG (<span id="drawer-cart-count">0</span>)</h3>
+        <button class="close-drawer" id="close-drawer-btn">&times;</button>
+      </div>
+
+      <div class="free-shipping-bar" id="shipping-bar-box">
+        <p class="small" id="shipping-msg">Add PKR 4,200 more for FREE Express Shipping!</p>
+        <div class="shipping-progress"><div class="progress-fill" id="shipping-fill" style="width: 58%;"></div></div>
+      </div>
+
+      <div class="drawer-body" id="cart-items-container">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="promo-box">
+          <input type="text" id="promo-input" placeholder="Promo Code (e.g. VOGUE10)">
+          <button class="btn btn-secondary btn-sm" onclick="landingApp.applyPromo()">Apply</button>
+        </div>
+
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="drawer-subtotal">PKR 0</span>
+        </div>
+        <div class="summary-row">
+          <span>Discount:</span>
+          <span id="drawer-discount" class="text-gold">PKR 0</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total Amount:</span>
+          <span id="drawer-total" class="text-gold">PKR 0</span>
+        </div>
+
+        <button class="btn btn-gold btn-block btn-lg mt-md" onclick="landingApp.openCheckoutModal()">
+          PROCEED TO CHECKOUT &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. QUICK VIEW PRODUCT MODAL -->
+  <div class="modal-overlay" id="quick-view-modal">
+    <div class="modal-card modal-lg">
+      <button class="modal-close" onclick="landingApp.closeModal('quick-view-modal')">&times;</button>
+      <div class="modal-body quick-view-body" id="quick-view-content">
+        <!-- Dynamically Populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 11. CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-lock text-gold"></i> Secure Checkout (Cash On Delivery)</h3>
+        <button class="modal-close" onclick="landingApp.closeModal('checkout-modal')">&times;</button>
+      </div>
+      <form onsubmit="landingApp.completeOrder(event)">
+        <div class="modal-body">
+          <div class="grid-2-col gap-md">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="chk-name" class="form-control" placeholder="e.g. Ayesha Khan" required>
+            </div>
+            <div class="form-group">
+              <label>Phone / WhatsApp *</label>
+              <input type="text" id="chk-phone" class="form-control" placeholder="0300-1234567" required>
+            </div>
+          </div>
+
+          <div class="grid-2-col gap-md my-sm">
+            <div class="form-group">
+              <label>City *</label>
+              <input type="text" id="chk-city" class="form-control" placeholder="e.g. Lahore, Karachi, Islamabad" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="chk-email" class="form-control" placeholder="ayesha@gmail.com">
+            </div>
+          </div>
+
+          <div class="form-group my-sm">
+            <label>Complete House Shipping Address *</label>
+            <textarea id="chk-address" class="form-control" rows="2" placeholder="House #, Street, Sector, City..." required></textarea>
+          </div>
+
+          <div class="payment-options my-sm">
+            <label class="form-label">Select Payment Method:</label>
+            <div class="radio-box">
+              <label><input type="radio" name="chk-payment" value="COD" checked> <strong>Cash On Delivery (COD)</strong> - Pay when parcel arrives</label>
+              <label><input type="radio" name="chk-payment" value="Bank"> <strong>Bank Transfer / JazzCash</strong> (Account details on confirmation)</label>
+            </div>
+          </div>
+
+          <div class="order-summary-box border-top pt-sm mt-md">
+            <div class="flex-between font-bold">
+              <span>Payable Amount:</span>
+              <span class="text-gold text-lg" id="chk-payable-amount">PKR 0</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="landingApp.closeModal('checkout-modal')">Cancel</button>
+          <button type="submit" class="btn btn-gold btn-lg"><i class="fa-solid fa-check"></i> PLACE ORDER NOW</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 12. SUCCESS TOAST -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check text-gold"></i>
+    <span id="toast-msg">Item added to your shopping bag!</span>
+  </div>
+
+  <!-- 13. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <span class="logo-title text-gold">VOGUE STUDIO</span>
+          <p class="footer-desc">Pakistan's premier luxury apparel destination for bespoke festive wear, unstitched lawn, and haute couture menswear.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>COLLECTIONS</h4>
+          <ul>
+            <li><a href="#products">Pret 3-Piece Suits</a></li>
+            <li><a href="#products">Unstitched Swiss Lawn</a></li>
+            <li><a href="#products">Embroidered Kurtis</a></li>
+            <li><a href="#products">Festive Velvet Couture</a></li>
+            <li><a href="#products">Groom & Menswear</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CUSTOMER CARE</h4>
+          <ul>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Shipping & Delivery Policy</a></li>
+            <li><a href="#">Exchange & Return Policy</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>STORE LOCATION</h4>
+          <p><i class="fa-solid fa-location-dot text-gold"></i> Flagship Store: MM Alam Road, Gulberg III, Lahore.</p>
+          <p><i class="fa-solid fa-phone text-gold"></i> Customer Support: +92 42 3587 9000</p>
+          <p><i class="fa-solid fa-envelope text-gold"></i> Email: care@voguestudio.pk</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VOGUE STUDIO Couture Ltd. All Rights Reserved.</p>
+        <div class="payment-badges">
+          <span>COD</span>
+          <span>VISA</span>
+          <span>MASTERCARD</span>
+          <span>JAZZCASH</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

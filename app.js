@@ -18,7 +18,7 @@ class VogueLandingApp {
         price: 14500,
         oldPrice: 16500,
         badge: 'HOT SELLER',
-        image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&auto=format&fit=crop',
+        image: 'images/model-haute-couture.png',
         description: 'Opulent deep royal navy velvet kameez with intricate gold tilla & zari embroidery on neckline, organza embroidered dupatta, and raw silk trousers.'
       },
       {
@@ -29,7 +29,7 @@ class VogueLandingApp {
         price: 5800,
         oldPrice: null,
         badge: 'NEW',
-        image: 'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&auto=format&fit=crop',
+        image: 'images/outdoor-rack-collection.png',
         description: '3-Piece unstitched premium Swiss lawn featuring digital floral motifs, embroidered schiffli border, and pure digital chiffon dupatta.'
       },
       {
@@ -40,7 +40,7 @@ class VogueLandingApp {
         price: 7200,
         oldPrice: 8500,
         badge: 'POPULAR',
-        image: 'https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?w=600&auto=format&fit=crop',
+        image: 'images/shopping-bags-craftsmanship.png',
         description: 'Elegantly hand-embroidered kurti with traditional mirror work details along sleeves and hemline, paired with contrasting crushed dupatta.'
       },
       {
@@ -51,7 +51,7 @@ class VogueLandingApp {
         price: 8900,
         oldPrice: 10200,
         badge: 'BESTSELLER',
-        image: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=600&auto=format&fit=crop',
+        image: 'images/store-rack-hero.png',
         description: 'Bespoke tailored white raw silk mens kurta with subtle threadwork collar, paired with matching straight trousers.'
       },
       {
@@ -62,7 +62,7 @@ class VogueLandingApp {
         price: 22500,
         oldPrice: 25000,
         badge: 'BRIDAL COUTURE',
-        image: 'https://images.unsplash.com/photo-1583391733975-d28f898398e0?w=600&auto=format&fit=crop',
+        image: 'images/pleated-skirt-model.png',
         description: 'Festive red chiffon maxi with heavy zardozi, sequins, and stone handwork. Includes embroidered dupatta with scalloped borders.'
       },
       {
@@ -73,7 +73,7 @@ class VogueLandingApp {
         price: 6400,
         oldPrice: null,
         badge: 'SUMMER 2026',
-        image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format&fit=crop',
+        image: 'images/model-haute-couture.png',
         description: 'Pastel mint green 3-piece unstitched lawn set with delicate floral embroidery patches and a tissue silk dupatta.'
       },
       {
@@ -84,7 +84,7 @@ class VogueLandingApp {
         price: 18000,
         oldPrice: 20500,
         badge: 'LIMITED',
-        image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop',
+        image: 'images/studio-stool-model.png',
         description: 'Heavy maroon velvet shawl with antique gold embroidery borders, accompanied by a minimalist straight velvet kurti.'
       },
       {
